@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h1>Weather Tracker</h1>
+                    <p class="muted">Minimal, modern UI</p>
+                </div>
+            </div>
+
+            <div class="hero">
+                <div class="big-temp" id="tempPreview">--°</div>
+                <div class="meta">
+                    <div class="cond" id="condPreview">--</div>
+                    <div class="muted" id="metaPreview">--</div>
+                </div>
+                <div class="visual" aria-hidden="true">☁️</div>
+            </div>
+
+            <div class="form-row">
+                <div class="input"><input type="text" id="WeatherInput" placeholder="Enter a city name"></div>
+                <button id="weather-btn" class="btn">Find</button>
+            </div>
+
+            <div id="resultContainer"></div>
+
+            <div class="forecast" id="forecastRow" aria-hidden="true">
+                <div class="day"><div class="dow">Mon</div><span class="dtemp">26°</span></div>
+                <div class="day"><div class="dow">Tue</div><span class="dtemp">28°</span></div>
+                <div class="day"><div class="dow">Wed</div><span class="dtemp">24°</span></div>
+                <div class="day"><div class="dow">Thu</div><span class="dtemp">23°</span></div>
+                <div class="day"><div class="dow">Fri</div><span class="dtemp">27°</span></div>
+            </div>
+
+            <div id="units" style="margin-top:1rem"></div>
+            <div style="margin-top:1rem; display:flex; justify-content:center;">
+                <button id="toggleUnit" class="btn" style="background:transparent; border:1px solid rgba(255,255,255,0.04);">Switch to °F</button>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
